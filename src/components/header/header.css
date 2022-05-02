@@ -1,0 +1,47 @@
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  transform: translateY(-100px);
+  opacity: 0;
+  backdrop-filter: blur(20px);
+  animation: fade-in 1s ease 1 forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header-container h3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: Poppins;
+}
+
+.header-container h3 p {
+  font-size: 15px;
+}
+
+.header-container h3 p span {
+  color: var(--color-pri);
+  font-size: 20px;
+}
+
+.header-container h2 {
+  font-size: 16px;
+  font-weight: 100;
+  color: var(--color-pri);
+  font-family: "Open Sans";
+  letter-spacing: 1px;
+}

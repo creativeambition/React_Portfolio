@@ -1,0 +1,438 @@
+.member-txt {
+  font-size: 20px;
+  top: 10px;
+  font-weight: 100;
+}
+
+.members-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+
+.members-container .member {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  background: rgba(0, 0, 0, 0.116);
+  padding: 20px;
+  border-radius: 50px;
+}
+.members-container .member .member-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 40px;
+  background: rgb(5, 7, 37) url(../props/img3.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--color-sec-light);
+}
+
+.members-container .member .member-info {
+  margin-left: 50px;
+  font-family: "Open Sans Condensed";
+  max-width: 50%;
+}
+
+.members-container .member .member-info .name {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.members-container .member .member-info .position {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.members-container .member .member-info .about {
+  margin-top: 40px;
+  font-weight: 100;
+  font-size: 17px;
+}
+.members-container .member .member-info .contact-member {
+  background-color: var(--color-sec-light);
+  padding: 17px 35px;
+  font-size: 18px;
+  margin-top: 50px;
+  border-radius: 50px;
+  position: absolute;
+  transition: 0.1s ease;
+}
+.members-container .member .member-info .contact-member span {
+  text-transform: capitalize;
+}
+.members-container .member .member-info .contact-member:hover {
+  background-color: transparent;
+  border: 2px solid var(--color-sec-light);
+}
+
+@media (max-width: 820px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 18px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: rgb(5, 7, 37) url(../props/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .position {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .about {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 28px;
+  }
+  .members-container .member .member-info a.contact-member {
+    background-color: var(--color-sec-light);
+    padding: 15px 25px;
+    font-size: 25px;
+    border-radius: 50px;
+    transition: 0.1s ease;
+    position: absolute;
+    top: -55px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 100px;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: rgb(5, 7, 37) url(../props/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .position {
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .about {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  .members-container .member .member-info a.contact-member {
+    background-color: var(--color-sec-light);
+    padding: 15px 25px;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: 0.1s ease;
+    position: absolute;
+    top: -55px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 10px;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: rgb(5, 7, 37) url(../props/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .position {
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .about {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  .members-container .member .member-info a.contact-member {
+    background-color: var(--color-sec-light);
+    padding: 15px 25px;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: 0.1s ease;
+    position: absolute;
+    top: -55px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: rgb(5, 7, 37) url(../props/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .position {
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .about {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 18px;
+  }
+  .members-container .member .member-info a.contact-member {
+    background-color: var(--color-sec-light);
+    padding: 15px 25px;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: 0.1s ease;
+    position: absolute;
+    top: -55px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: rgb(5, 7, 37) url(../props/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .position {
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  .members-container .member .member-info .about {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  .members-container .member .member-info a.contact-member {
+    background-color: var(--color-sec-light);
+    padding: 15px 25px;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: 0.1s ease;
+    position: absolute;
+    top: -55px;
+    right: 5px;
+  }
+}
